@@ -18,7 +18,7 @@ https://dessysaidah.streamlit.app
 
 ---
 
-## 📉 Featured Project: Telco Customer Churn Prediction
+## 📉 Featured Project: Customer Churn Prediction
 This project demonstrates:
 - Data cleaning & preprocessing
 - Feature encoding and scaling
