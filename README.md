@@ -1,4 +1,4 @@
-# 📊 Dessy | Data Science Portfolio
+# 📊 Dessy Saidah | Data Science Portfolio
 
 This repository contains my **Streamlit-based data science portfolio**, showcasing
 end-to-end machine learning projects with a focus on **business insight** and
