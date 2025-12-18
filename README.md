@@ -37,19 +37,6 @@ This project demonstrates:
 
 ---
 
-## 📂 Project Structure
-streamlit-portfolio/
-├─ Home.py
-├─ requirements.txt
-├─ README.md
-└─ pages/
-├─ 1_About Me.py
-├─ 2_Projects.py
-└─ 3_Contact Me.py
-
-
----
-
 ## ▶️ Run Locally
 ```bash
 pip install -r requirements.txt
