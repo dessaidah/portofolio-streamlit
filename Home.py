@@ -70,34 +70,27 @@ with right:
 st.divider()
 
 
-st.subheader("Featured Project")
+st.subheader("🚀 Featured Projects")
 
-p_left, p_right = st.columns([2, 1])
+col1, col2 = st.columns(2)
 
-with p_left:
+with col1:
     st.markdown("### 📉 Customer Churn Prediction")
     st.write(
-        "An end-to-end machine learning application that allows users to "
-        "upload a dataset, train a model, evaluate performance, and predict "
-        "customer churn probability."
+        "End-to-end ML app for predicting customer churn probability "
+        "with model evaluation and explainability."
     )
+    if st.button("Open Churn Project"):
+        st.switch_page("projects/churn_app.py")
 
-    st.markdown("""
-**Key features:**
-- Upload CSV dataset  
-- Automatic preprocessing  
-- Train & evaluate ML model  
-- Predict churn probability  
-""")
-
-    st.page_link(
-        "pages/2_Projects.py",
-        label="➡️ Open Project",
-        use_container_width=True
+with col2:
+    st.markdown("### 🚗 Insurance Fraud Risk Prediction")
+    st.write(
+        "Fraud risk scoring system using CatBoost with optimized threshold "
+        "to support claim screening and investigation prioritization."
     )
-
-with p_right:
-    st.info("Tip: Visit **Projects** to interact with the full ML application.")
+    if st.button("Open Fraud Project"):
+        st.switch_page("projects/fraud_app.py")
 
 st.divider()
 
