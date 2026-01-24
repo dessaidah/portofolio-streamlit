@@ -12,7 +12,7 @@ https://dessysaidah.streamlit.app
 ## 🚀 Features
 - Multi-page Streamlit application
 - About Me & Contact sections
-- End-to-end ML project: **Customer Churn Prediction**
+- End-to-end ML project: **Customer Churn Prediction**, **Insurance Fraud Risk Prediction**
 - Dataset upload, preprocessing, model training & prediction
 - Clean, recruiter-friendly UI
 
