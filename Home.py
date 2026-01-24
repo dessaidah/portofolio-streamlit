@@ -16,15 +16,12 @@ st.write(
     "that support better business decisions — delivered through interactive Streamlit apps."
 )
 
-cta1, cta2, cta3 = st.columns([1, 1, 2])
+cta1, cta2 = st.columns([1, 2])
 
 with cta1:
-    st.page_link("pages/2_Projects.py", label="📉 View Projects", use_container_width=True)
+    st.page_link("pages/4_Contact Me.py", label="📫 Contact Me", use_container_width=True)
 
 with cta2:
-    st.page_link("pages/3_Contact Me.py", label="📫 Contact Me", use_container_width=True)
-
-with cta3:
     st.markdown(
         "🔗 **Links:** "
         "[GitHub](https://github.com/dessaidah) · "
@@ -81,7 +78,7 @@ with col1:
         "with model evaluation and explainability."
     )
     if st.button("Open Churn Project"):
-        st.switch_page("projects/churn_app.py")
+        st.switch_page("pages/2_Churn Prediction.py")
 
 with col2:
     st.markdown("### 🚗 Insurance Fraud Risk Prediction")
@@ -90,7 +87,7 @@ with col2:
         "to support claim screening and investigation prioritization."
     )
     if st.button("Open Fraud Project"):
-        st.switch_page("projects/fraud_app.py")
+        st.switch_page("pages/3_Fraud Risk Prediction.py")
 
 st.divider()
 

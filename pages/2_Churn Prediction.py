@@ -9,13 +9,26 @@ from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 
-# ------------------------------------------------
-# Page config
-# ------------------------------------------------
-st.set_page_config(page_title="Customer Churn Prediction", layout="wide")
+
+# ================================
+# Page Config
+# ================================
+st.set_page_config(
+    page_title="Customer Churn Prediction",
+    page_icon="📉",
+    layout="wide"
+)
 
 st.title("📉 Customer Churn Prediction")
-st.write("Predict customer churn probability using machine learning.")
+st.markdown(
+    """
+    This application predicts **customer churn probability** using a
+    **machine learning classification model**.
+
+    The model helps businesses **identify at-risk customers early** and
+    supports **data-driven retention strategies**.
+    """
+)
 
 st.divider()
 
