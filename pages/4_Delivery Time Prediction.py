@@ -3,6 +3,12 @@ import pandas as pd
 import numpy as np
 import joblib
 
+st.set_page_config(
+    page_title="Food Delivery Time Prediction",
+    page_icon="🍔",
+    layout="wide"
+)
+
 @st.cache_resource
 def load_artifacts():
     from xgboost import XGBRegressor 
