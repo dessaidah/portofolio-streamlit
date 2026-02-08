@@ -5,6 +5,8 @@ import joblib
 
 @st.cache_resource
 def load_artifacts():
+    from xgboost import XGBRegressor 
+    
     model = joblib.load("projects/models/xgb_model.pkl")
     scaler = joblib.load("projects/models/scaler.pkl")
     ohe_columns = joblib.load("projects/models/ohe_columns.pkl")
