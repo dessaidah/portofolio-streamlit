@@ -19,7 +19,7 @@ st.write(
 cta1, cta2 = st.columns([1, 2])
 
 with cta1:
-    st.page_link("pages/4_Contact Me.py", label="📫 Contact Me", use_container_width=True)
+    st.page_link("pages/5_Contact Me.py", label="📫 Contact Me", use_container_width=True)
 
 with cta2:
     st.markdown(
@@ -69,7 +69,7 @@ st.divider()
 
 st.subheader("🚀 Featured Projects")
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("### 📉 Customer Churn Prediction")
@@ -88,6 +88,15 @@ with col2:
     )
     if st.button("Open Fraud Project"):
         st.switch_page("pages/3_Fraud Risk Prediction.py")
+
+with col3:
+    st.markdown("### 🍔 Food Delivery Time Prediction")
+    st.write(
+        "Explainable machine learning model to predict food delivery time "
+        "based on distance, traffic, and operational factors."
+    )
+    if st.button("Open Delivery Time Project"):
+        st.switch_page("pages/4_Delivery Time Prediction.py")
 
 st.divider()
 
