@@ -82,6 +82,9 @@ max_date = sales["created_at"].max()
 one_year_ago = max_date - pd.DateOffset(years=1)
 sales_1y = sales[sales["created_at"] >= one_year_ago]
 
+st.write("Sales shape:", sales.shape)
+st.write("Filtered shape:", filtered_df.shape)
+
 # ======================
 # TITLE
 # ======================
