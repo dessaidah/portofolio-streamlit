@@ -62,8 +62,9 @@ h2, h3 {
 # ======================
 @st.cache_data
 def load_data():
-    BASE_DIR = Path(__file__).parent
-    
+    BASE_DIR = Path(__file__).resolve().parent.parent  
+    # parent.parent karena file ada di folder pages
+
     sales_path = BASE_DIR / "projects" / "models" / "base_sales.csv"
     rfm_path   = BASE_DIR / "projects" / "models" / "rfm_table.csv"
 
