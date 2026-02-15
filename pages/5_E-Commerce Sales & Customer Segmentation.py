@@ -72,6 +72,7 @@ def load_data():
 
 sales, rfm = load_data()
 sales["created_at"] = pd.to_datetime(sales["created_at"], errors="coerce")
+st.write(sales["created_at"].dtype)
 # ======================
 # FILTER LAST 1 YEAR
 # ======================
