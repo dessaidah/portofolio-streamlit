@@ -6,6 +6,7 @@ matplotlib==3.7.3
 joblib
 xgboost==2.0.3
 catboost==1.2.2
-plotly
+plotly>=5.18.0
+
 
 
