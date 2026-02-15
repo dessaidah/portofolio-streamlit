@@ -5,9 +5,6 @@ import numpy as np
 
 st.set_page_config(layout="wide", page_title="E-Commerce Analytics")
 
-# =========================
-# PREMIUM MINIMALIST CSS
-# =========================
 st.markdown("""
 <style>
 
