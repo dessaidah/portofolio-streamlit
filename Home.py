@@ -19,7 +19,7 @@ st.write(
 cta1, cta2 = st.columns([1, 2])
 
 with cta1:
-    st.page_link("pages/5_Contact Me.py", label="📫 Contact Me", use_container_width=True)
+    st.page_link("pages/6_Contact Me.py", label="📫 Contact Me", use_container_width=True)
 
 with cta2:
     st.markdown(
