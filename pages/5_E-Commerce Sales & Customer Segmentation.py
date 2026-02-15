@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import numpy as np
+from pathlib import Path
 
 st.set_page_config(layout="wide", page_title="E-Commerce Analytics")
 
@@ -58,8 +59,15 @@ h2, h3 {
 # ======================
 @st.cache_data
 def load_data():
-    sales = pd.read_csv("projects/models/base_sales.csv", parse_dates=["created_at"])
-    rfm = pd.read_csv("projects/models/rfm_table.csv")
+    BASE_DIR = Path(__file__).resolve().parent.parent  
+    # parent.parent karena file ada di folder pages
+
+    sales_path = BASE_DIR / "projects" / "models" / "base_sales.csv"
+    rfm_path   = BASE_DIR / "projects" / "models" / "rfm_table.csv"
+
+    sales = pd.read_csv(sales_path, parse_dates=["created_at"])
+    rfm   = pd.read_csv(rfm_path)
+
     return sales, rfm
 
 sales, rfm = load_data()
