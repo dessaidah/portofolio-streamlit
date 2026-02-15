@@ -121,6 +121,13 @@ with col4:
 
 st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
 
+st.write("DEBUG INFO")
+st.write("Sales shape:", sales.shape)
+st.write("Date min:", sales["created_at"].min())
+st.write("Date max:", sales["created_at"].max())
+
+filtered = sales[sales["created_at"] >= sales["created_at"].max() - pd.DateOffset(years=1)]
+st.write("Last year rows:", filtered.shape)
 # ======================
 # REVENUE TREND
 # ======================
