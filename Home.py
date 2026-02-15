@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 header_image = Image.open("assets/header.png")
-st.image(header_image, use_container_width=True)
+st.image(header_image, width=900)
 
 st.title("Dessy Saidah | Data Science Portfolio ✨")
 st.write(
